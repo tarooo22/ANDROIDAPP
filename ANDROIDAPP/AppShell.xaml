@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:ANDROIDAPP"
+       x:Class="ANDROIDAPP.AppShell">
+    <FlyoutItem Title="Dashboard" Icon="dashboard_icon.png">
+        <ShellContent Title="Dashboard" ContentTemplate="{DataTemplate local:DashboardPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Profile" Icon="profile_icon.png">
+        <ShellContent Title="Profile" Route="Profile" ContentTemplate="{DataTemplate local:ProfilePage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Settings" Icon="settings_icon.png">
+        <ShellContent Title="Settings" ContentTemplate="{DataTemplate local:SettingsPage}" />
+    </FlyoutItem>
+
+</Shell>

@@ -1,0 +1,83 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:microcharts="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
+             x:Class="ANDROIDAPP.DashboardPage"
+             Title="Dashboard"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+            <Frame CornerRadius="20" Padding="20" HasShadow="True" BackgroundColor="Transparent">
+                <Grid>
+                    <Grid.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#4CAF50" Offset="0.0" />
+                            <GradientStop Color="#2196F3" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Grid.Background>
+
+                    <VerticalStackLayout Padding="20">
+                        <Label Text="Hello, Nika Tarashvili!" 
+                   FontSize="24" 
+                   FontAttributes="Bold" 
+                   TextColor="White" />
+                        <Label Text="Software Developer at Georgia, Tbilisi" 
+                   TextColor="White" />
+                        <Label Text="Email: nika.tarashvili@gmail.com" 
+                   TextColor="White" />
+                    </VerticalStackLayout>
+                </Grid>
+            </Frame>
+            <Frame CornerRadius="10" Padding="20" HasShadow="True" BackgroundColor="#F1F8E9">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Work Hours Breakdown" FontSize="18" FontAttributes="Bold" TextColor="#4CAF50" />
+                    <microcharts:ChartView HeightRequest="200" x:Name="WorkHoursChart" />
+                </VerticalStackLayout>
+            </Frame>
+            <Frame CornerRadius="10" Padding="20" HasShadow="True" BackgroundColor="#E3F2FD">
+                <VerticalStackLayout Spacing="20">
+                    <Label Text="Quick Actions" FontSize="18" FontAttributes="Bold" TextColor="#2196F3" />
+                    <HorizontalStackLayout Spacing="15" HorizontalOptions="CenterAndExpand">
+                        <Button Text="Profile"
+                                TextColor="White"
+                                BackgroundColor="#4CAF50"
+                                CornerRadius="20"
+                                Padding="10"
+                                WidthRequest="120"
+                                HeightRequest="50"
+                                Clicked="OnProfileClicked">
+                            <Button.ImageSource>
+                                <FontImageSource Glyph="" FontFamily="FontAwesome" Size="20" Color="White" />
+                            </Button.ImageSource>
+                        </Button>
+                        <Button Text="Income"
+                                TextColor="White"
+                                BackgroundColor="#2196F3"
+                                CornerRadius="20"
+                                Padding="10"
+                                WidthRequest="120"
+                                HeightRequest="50"
+                                Clicked="OnIncomeClicked">
+                            <Button.ImageSource>
+                                <FontImageSource Glyph="" FontFamily="FontAwesome" Size="20" Color="White" />
+                            </Button.ImageSource>
+                        </Button>
+                        <Button Text="Vacations"
+                                TextColor="White"
+                                BackgroundColor="#FFC107"
+                                CornerRadius="20"
+                                Padding="10"
+                                WidthRequest="120"
+                                HeightRequest="50"
+                                Clicked="OnVacationsClicked">
+                            <Button.ImageSource>
+                                <FontImageSource Glyph="" FontFamily="FontAwesome" Size="20" Color="White" />
+                            </Button.ImageSource>
+                        </Button>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,9 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ANDROIDAPP.IncomePage"
+             Title="Income">
+    <VerticalStackLayout Padding="20" Spacing="10">
+        <Label Text="Income Details" FontSize="24" FontAttributes="Bold" />
+        <Label Text="This page displays your income information." />
+    </VerticalStackLayout>
+</ContentPage>

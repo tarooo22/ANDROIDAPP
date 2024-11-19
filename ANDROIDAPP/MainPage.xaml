@@ -1,0 +1,27 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ANDROIDAPP.MainPage"
+             Title="Login">
+
+    <VerticalStackLayout Spacing="20" Padding="30">
+
+        <Label Text="Welcome Back!"
+               FontSize="24"
+               HorizontalOptions="Center" />
+        <Entry Placeholder="Employee ID"
+               x:Name="EmployeeIDEntry"
+               Keyboard="Text" />
+        <Entry Placeholder="Password"
+               IsPassword="True"
+               x:Name="PasswordEntry" />
+        <Button Text="Login"
+                BackgroundColor="#2196F3"
+                TextColor="White"
+                Clicked="OnLoginButtonClicked" />
+        <Button Text="Cancel"
+                BackgroundColor="#F44336"
+                TextColor="White"
+                Clicked="OnCancelButtonClicked" />
+
+    </VerticalStackLayout>
+</ContentPage>
